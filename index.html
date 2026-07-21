@@ -27,50 +27,66 @@
     <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23111111'/%3E%3Ctext x='50' y='300' font-family='monospace' font-size='80' fill='%23ffff00' font-weight='bold'%3E공항 클럽%3C/text%3E%3Ctext x='50' y='400' font-family='monospace' font-size='60' fill='%2300ff41'%3E비교%3C/text%3E%3C/svg%3E">
 
     <!-- JSON-LD 스키마 -->
-    <script type="application/ld+json">
+    <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "공항 클럽 비교",
+  "description": "공항 라운지와 클럽을 비교하고 리뷰하는 사이트",
+  "url": "https://hongdae-club-guide.node-link.shop/",
+  "telephone": "+82-10-6279-0862",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "서울",
+    "addressCountry": "KR"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.7",
+    "reviewCount": "128",
+    "bestRating": "5"
+  },
+  "review": [
     {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "공항 클럽 비교",
-        "description": "공항 라운지와 클럽을 비교하고 리뷰하는 사이트",
-        "url": "https://t3b05-gh-club-cmp-2.vercel.app",
-        "telephone": "+82-10-6279-0862",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "서울",
-            "addressCountry": "KR"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "reviewCount": "128",
-            "bestRating": "5"
-        },
-        "review": [
-            {
-                "@type": "Review",
-                "author": { "@type": "Person", "name": "비행기타는뇐네" },
-                "datePublished": "2025-03-18",
-                "reviewBody": "여기 진짜 신세계야. 공항 클럽 중에서도 가성비 짱. 맥주 무한!",
-                "reviewRating": { "@type": "Rating", "ratingValue": "5" }
-            },
-            {
-                "@type": "Review",
-                "author": { "@type": "Person", "name": "라운지헌터" },
-                "datePublished": "2025-03-10",
-                "reviewBody": "엄청 편하고 조용해서 좋았어. 근데 음식 종류가 좀 아쉬움.",
-                "reviewRating": { "@type": "Rating", "ratingValue": "4" }
-            },
-            {
-                "@type": "Review",
-                "author": { "@type": "Person", "name": "지연녀" },
-                "datePublished": "2025-02-22",
-                "reviewBody": "지연됐을 때 여기서 시간 때우기 최고야. 꿀맛!",
-                "reviewRating": { "@type": "Rating", "ratingValue": "5" }
-            }
-        ]
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "비행기타는뇐네"
+      },
+      "datePublished": "2025-03-18",
+      "reviewBody": "여기 진짜 신세계야. 공항 클럽 중에서도 가성비 짱. 맥주 무한!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "라운지헌터"
+      },
+      "datePublished": "2025-03-10",
+      "reviewBody": "엄청 편하고 조용해서 좋았어. 근데 음식 종류가 좀 아쉬움.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "지연녀"
+      },
+      "datePublished": "2025-02-22",
+      "reviewBody": "지연됐을 때 여기서 시간 때우기 최고야. 꿀맛!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     }
-    </script>
+  ]
+}</script>
 
     <style>
         /* 전체 리셋 & 기본 */
