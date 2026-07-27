@@ -1,315 +1,96 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공항 클럽 비교 | 상세 정보 - 진짜 리뷰로 찾는 베스트 클럽</title>
-    <meta name="description" content="공항 클럽 비교 No.1 — 김포, 인천, 제주공항 클럽 상세 정보. 강남 스타일, 명동 센스, 홍대 감성까지 당신의 게이트 앞 프리미엄 경험을 찾아드립니다. 지금 확인!">
-    <meta name="keywords" content="공항 클럽, 공항 라운지, 클럽 비교, 입국장 클럽, 출국장 라운지, 김포공항 클럽, 인천공항 클럽, 제주공항 클럽, 공항 라운지 추천, 공항 클럽 리뷰">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-acid-yellow">
-    <link rel="canonical" href="https://hongdae-club-guide.node-link.shop/about.html">
-    <!-- OG 메타 -->
-    <meta property="og:title" content="공항 클럽 비교 | 상세 정보 - 진짜 리뷰로 찾는 베스트 클럽">
-    <meta property="og:description" content="김포, 인천, 제주공항 클럽 상세 정보. 강남부터 홍대까지 당신의 게이트 앞 프리미엄 경험을 찾아드립니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hongdae-club-guide.node-link.shop/about.html">
-    <style>
-        /* 전체 리셋 & 기본 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Courier New', monospace;
-            background: #f5f0e8;
-            color: #1a1a1a;
-            line-height: 1.5;
-            min-height: 100vh;
-        }
-        /* 브루탈리스트 디자인 시스템 */
-        h1, h2, h3, h4, h5, h6 {
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-        h1 {
-            font-size: 3.5rem;
-            margin-bottom: 0.5em;
-            border-bottom: 4px solid #000;
-            display: inline-block;
-        }
-        h2 {
-            font-size: 2.5rem;
-            margin-bottom: 0.4em;
-        }
-        h3 {
-            font-size: 1.75rem;
-            margin-bottom: 0.3em;
-        }
-        p, li, blockquote, .review-card, .hero-text {
-            font-size: 1.125rem;
-            margin-bottom: 1em;
-        }
-        a {
-            color: #1a1a1a;
-            text-decoration: underline;
-            font-weight: bold;
-        }
-        a:hover {
-            color: #e60012;
-            background: #ffd700;
-        }
-        /* 버튼 & 강조 */
-        .btn {
-            display: inline-block;
-            background: #000;
-            color: #fff;
-            padding: 0.75rem 2rem;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            border: 3px solid #000;
-            transition: all 0.2s;
-            font-size: 1rem;
-        }
-        .btn:hover {
-            background: #ffd700;
-            color: #000;
-            border-color: #ffd700;
-            cursor: pointer;
-        }
-        /* 레이아웃 */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem;
-        }
-        /* 헤더 */
-        header {
-            background: #ffd700;
-            padding: 1rem 0;
-            border-bottom: 6px solid #000;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        header .container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        header .logo {
-            font-size: 2rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            text-decoration: none;
-            color: #000;
-            background: #fff;
-            padding: 0.25rem 0.75rem;
-            border: 3px solid #000;
-        }
-        header nav {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-        }
-        header nav a {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.95rem;
-            color: #000;
-            text-decoration: none;
-            border-bottom: 2px solid transparent;
-            padding-bottom: 0.25rem;
-        }
-        header nav a:hover {
-            border-bottom-color: #000;
-        }
-        .hamburger {
-            display: none;
-            background: none;
-            border: 2px solid #000;
-            padding: 0.5rem;
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-        @media (max-width: 768px) {
-            header nav {
-                display: none;
-                width: 100%;
-                flex-direction: column;
-                background: #ffd700;
-                padding: 1rem 0;
-                border-top: 3px solid #000;
-                margin-top: 0.5rem;
-            }
-            header nav.active {
-                display: flex;
-            }
-            .hamburger {
-                display: block;
-            }
-            h1 { font-size: 2.5rem; }
-            h2 { font-size: 2rem; }
-        }
-        /* ===== 페이지 전용 콘텐츠 스타일 ===== */
-        .hero-section {
-            position: relative;
-            background: #1a1a1a;
-            color: #fff;
-            padding: 4rem 2rem;
-            margin-bottom: 3rem;
-            border: 6px solid #ffd700;
-            text-align: center;
-            overflow: hidden;
-        }
-        .hero-section h1 {
-            border-bottom-color: #ffd700;
-            color: #ffd700;
-        }
-        .hero-section p {
-            font-size: 1.3rem;
-            max-width: 700px;
-            margin: 1rem auto 0;
-        }
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin: 3rem 0;
-        }
-        .info-card {
-            background: #ffffff;
-            border: 4px solid #000;
-            padding: 2rem;
-            box-shadow: 6px 6px 0 #000;
-            transition: transform 0.2s;
-        }
-        .info-card:hover {
-            transform: translate(-3px, -3px);
-            box-shadow: 9px 9px 0 #000;
-        }
-        .info-card h3 {
-            margin-bottom: 0.5rem;
-            border-bottom: 3px solid #ffd700;
-            display: inline-block;
-        }
-        .info-card .tag {
-            display: inline-block;
-            background: #ffd700;
-            padding: 0.2rem 0.8rem;
-            font-weight: bold;
-            font-size: 0.85rem;
-            margin-bottom: 1rem;
-        }
-        .faq-list {
-            background: #fff;
-            border: 4px solid #000;
-            padding: 2rem;
-            margin: 2rem 0;
-        }
-        .faq-item {
-            border-bottom: 2px solid #ddd;
-            padding: 1rem 0;
-        }
-        .faq-item:last-child {
-            border-bottom: none;
-        }
-        .faq-question {
-            font-weight: bold;
-            font-size: 1.2rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .faq-answer {
-            margin-top: 0.5rem;
-            color: #333;
-        }
-        .closing-cta {
-            background: #000;
-            color: #ffd700;
-            padding: 3rem 2rem;
-            text-align: center;
-            border: 6px solid #ffd700;
-            margin: 3rem 0;
-        }
-        .closing-cta h2 {
-            color: #fff;
-        }
-        .closing-cta .btn {
-            background: #ffd700;
-            color: #000;
-            border-color: #ffd700;
-            margin-top: 1rem;
-        }
-        .closing-cta .btn:hover {
-            background: #fff;
-            color: #000;
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta charset="UTF-8">
+  <title>공항 클럽 비교 — 정보</title>
+  <meta name="description" content="공항 클럽을 선택할 때 인원 규모, 방문 시간, 이용 목적에 따라 달라지는 체크리스트와 비교 포인트를 제시합니다. 조건별 맞춤 정보를 통해 현명한 선택을 돕습니다.">
+  <meta name="keywords" content="공항 클럽, 클럽 비교, 공항 라운지, 클럽 이용 팁, 공항 라운지 선택, 대형 클럽 소형 클럽">
+  <link rel="canonical" href="https://hongdae-club-guide.node-link.shop/about.html">
+  <meta property="og:title" content="공항 클럽 비교 — 정보">
+  <meta property="og:description" content="인원·시간·목적에 따라 달라지는 공항 클럽 선택 기준을 한눈에 정리했습니다.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hongdae-club-guide.node-link.shop/about.html">
+  <meta property="og:image" content="https://hongdae-club-guide.node-link.shop">
 </head>
 <body>
-
-<header>
-    <div class="container">
-        <a href="/" class="logo">CLUB CMP</a>
-        <button class="hamburger" onclick="this.nextElementSibling.classList.toggle('active')">☰</button>
-        <nav>
-            <a href="/">홈</a>
-            <a href="/compare">비교</a>
-            <a href="/info">정보</a>
-            <a href="/reviews">리뷰</a>
-            <a href="/contact">문의</a>
-        </nav>
+  <header>
+    <div class="k-grid-t7vk">
+      <h1 class="hero">공항 클럽 선택을 위한 종합 정보</h1>
     </div>
-</header>
+    <nav>
+      <a href="/overview">개요</a>
+      <a href="/compare">비교표</a>
+      <a href="/info">정보</a>
+      <a href="/faq">FAQ</a>
+      <a href="/contact">문의</a>
+    </nav>
+    <button class="menu-toggle">Menu</button>
+  </header>
 
-<main class="container">
-
-    <section class="hero-section">
-        <h1>공항 클럽 완전 정복</h1>
-        <p>김포, 인천, 제주공항 — 내게 딱 맞는 클럽, 여기 다 있다. 강남 감성? 명동 센스? 홍대 힙? 게이트 앞에서 진짜 경험을 찾아드립니다.</p>
+  <main class="k-top-3sw1">
+    <section id="intro">
+      <h2>왜 “정보” 페이지가 필요한가?</h2>
+      <p>공항 클럽은 단순히 라운지를 제공하는 것을 넘어, 여행 전후의 편안함과 효율성을 결정짓는 핵심 요소입니다. 특히 인원 규모, 도착·출발 시간, 그리고 이용 목적에 따라 최적의 선택이 달라집니다. 이 페이지는 그런 다양한 변수들을 체계적으로 정리해, 당신이 현명한 판단을 할 수 있도록 돕습니다.</p>
+      <p>우리는 “Black Book Concierge”라는 컨셉을 차용해, 기존의 평범한 가이드와는 다른, 직설적이고 도전적인 어조로 정보를 전달합니다. 불필요한 장식은 배제하고, 핵심만을 집어넣어 독자가 바로 행동에 옮길 수 있도록 설계했습니다.</p>
     </section>
 
-    <!-- 지역별 상세 정보 카드 -->
-    <div class="info-grid">
-        <div class="info-card">
-            <span class="tag">김포공항</span>
-            <h3>출국장 M클럽</h3>
-            <p><strong>위치:</strong> 국내선 출국장 2층 4번 게이트附近<br>
-            <strong>운영:</strong> 06:00 - 21:30<br>
-            <strong>특징:</strong> 한정식 뷔페, 샤워실, 무료 와인 바. 강남 감성 인테리어가 포인트.</p>
-            <p><em>“비행기 타기 전에 국밥 한 그릇? 여기서 시작해.”</em></p>
-            <a href="#" class="btn">리뷰 보기</a>
-        </div>
-        <div class="info-card">
-            <span class="tag">인천공항</span>
-            <h3>라운지 O(출국장 4층)</h3>
-            <p><strong>위치:</strong> 제1여객터미널 동편 4층<br>
-            <strong>운영:</strong> 24시간<br>
-            <strong>특징:</strong> 스파 수면실, 프리미엄 위스키 바, 명동 스타일 감각. 환승객에게 딱.</p>
-            <p><em>“긴 환승 시간, 이곳에서 홍대 감성 라운지로 리프레시.”</em></p>
-            <a href="#" class="btn">리뷰 보기</a>
-        </div>
-        <div class="info-card">
-            <span class="tag">제주공항</span>
-            <h3>더 클럽 제주</h3>
-            <p><strong>위치:</strong> 국내선 출국장 중앙<br>
-            <strong>운영:</strong> 07:00 - 20:00<br>
-            <strong>특징:</strong> 오메기술, 감귤주스 무제한, 제주 돌담 인테리어. 힐링 그 자체.</p>
-            <p><em>“제주 가는 길, 클럽에서 제주 맛보고 출발.”</em></p>
-            <a href="#" class="btn">리뷰 보기</a>
-        </div>
-        <div class="info-card">
-            <span class="tag">김포공항</span>
-            <h3>프리미어 라운지</h3>
-            <p><strong>위치:</strong> 국제선 출국장 3층<br>
-            <strong>운영:</strong> 05:30 - 22:00<br
+    <section id="size">
+      <h2>인원 규모에 따른 선택 기준</h2>
+      <p>1인 여행자는 개인 공간과 프리미엄 서비스를 중시합니다. 소형 클럽은 조용한 환경과 개인 전용 라운지를 제공하므로, 프라이버시를 최우선으로 하는 경우에 적합합니다.</p>
+      <p>2~4인 그룹은 공동 라운지의 분위기를 활용하면서도, 일정 정도 개인 공간이 보장되는 클럽을 선호합니다. 이때는 좌석 배치와 식음료 옵션을 비교하는 것이 중요합니다.</p>
+      <p>5인 이상 대형 그룹은 전용 라운지나 회의실 옵션을 제공하는 클럽을 선택해야 합니다. 이런 클럽은 비즈니스 미팅이나 파티용으로 최적화된 시설을 갖추고 있어, 대규모 인원 관리가 용이합니다.</p>
+    </section>
+
+    <section id="time">
+      <h2>방문 시간대에 맞는 체크리스트</h2>
+      <p>아침 일찍(06:00~09:00) 도착하는 경우, 조식 뷔페와 빠른 체크인 절차가 있는 클럽을 선정하십시오. 이때는 조용한 분위기와 빠른 서비스가 핵심입니다.</p>
+      <p>점심·오후(12:00~16:00)에는 비즈니스 미팅을 위한 전용 좌석과 고속 Wi‑Fi가 필수입니다. 또한, 다양한 음료와 스낵이 제공되는지 확인하면 업무 효율을 높일 수 있습니다.</p>
+      <p>야간(20:00 이후) 여행자는 라운지의 휴식 시설과 야간 식음료 서비스 유무를 최우선으로 검토하세요. 특히 조용한 조명과 편안한 소파가 있는지 확인하는 것이 좋습니다.</p>
+    </section>
+
+    <section id="purpose">
+      <h2>이용 목적별 핵심 포인트</h2>
+      <p>· <strong>비즈니스</strong>: 회의실, 고속 인터넷, 전원 콘센트, 그리고 프리미엄 식음료가 제공되는 클럽이 필요합니다. 프라이빗룸이 있는 클럽을 우선 고려하십시오.</p>
+      <p>· <strong>가족·친구 동행</strong>: 어린이 공간, 놀이 시설, 그리고 다양한 간식이 제공되는 라운지를 선택하면 모두가 만족합니다. 가족 전용 라운지 옵션을 확인하세요.</p>
+      <p>· <strong>휴식·여행 준비</strong>: 스파, 샤워실, 마사지 서비스가 포함된 라운지를 선택하면 장거리 비행 전후에 몸과 마음을 회복할 수 있습니다.</p>
+      <p>· <strong>프리미엄 체험</strong>: 고급 와인바, 셰프 특선 메뉴, 파노라마 뷰 등 차별화된 서비스를 제공하는 클럽은 비용 대비 만족도가 높습니다.</p>
+    </section>
+
+    <section id="checklist">
+      <h2>검증해야 할 7가지 핵심 기준</h2>
+      <ul>
+        <li>입국·출국 시 연결 교통편 여부</li>
+        <li>라운지 운영 시간과 24시간 이용 가능 여부</li>
+        <li>제공되는 식음료 종류와 품질</li>
+        <li>전용 샤워·세면 시설 유무</li>
+        <li>비즈니스 시설(회의실·프린터·고속 Wi‑Fi)</li>
+        <li>프라이버시 보장 수준(전용실·소음 차단)</li>
+        <li>가격 대비 제공 서비스 범위(멤버십·일일 이용)</li>
+      </ul>
+      <p>위 체크리스트를 기준으로 자신의 상황에 맞는 클럽을 골라야 합니다. 어느 항목이 가장 중요한지는 여행 목적과 인원 구성에 따라 달라지므로, 각 항목을 점검하면서 우선순위를 매겨 보세요.</p>
+    </section>
+
+    <section id="faq">
+      <h2>자주 묻는 질문</h2>
+      <h3>Q1. 멤버십 없이도 하루 이용이 가능한가요?</h3>
+      <p>대부분의 클럽은 일일 이용권을 별도 가격에 제공하지만, 특정 라운지는 멤버십 회원 전용으로 운영됩니다. 사전 예약 시 이용 가능 여부를 반드시 확인하십시오.</p>
+      <h3>Q2. 입구에서 신분증 검사는 필수인가요?</h3>
+      <p>네, 대부분의 클럽은 보안 절차의 일환으로 여권·항공권·멤버십 카드 등 신분증을 확인합니다. 이때 라운지 이용 목적에 맞는 티켓이 필요합니다.</p>
+      <h3>Q3. 어린이 전용 공간이 있는 클럽은 어디인가요?</h3>
+      <p>가족 여행객을 위해 어린이 놀이 구역과 키즈 메뉴를 제공하는 클럽이 일부 있습니다. “가족 전용 라운지” 또는 “키즈존” 키워드로 검색하면 쉽게 찾을 수 있습니다.</p>
+      <h3>Q4. 라운지 내에서 업무를 보려면 어떤 시설을 확인해야 하나요?</h3>
+      <p>전용 전원 콘센트, 고속 유선·무선 인터넷, 그리고 회의실 예약 가능 여부를 확인하세요. 또한, 프린터와 스캔 서비스가 제공되는지 여부도 중요한 체크 포인트입니다.</p>
+    </section>
+
+    <section id="conclusion">
+      <h2>결론 – 나에게 맞는 클럽을 선택하는 법</h2>
+      <p>공항 클럽 선택은 단순히 “가격이 저렴하다”가 아니라, 인원·시간·목적이라는 세 축을 기준으로 맞춤형 판단을 해야 합니다. 위에서 제시한 체크리스트와 상황별 기준을 활용해, 각각의 변수에 맞는 라운지를 골라보세요. 그렇게 하면 여행 전후의 모든 순간이 더욱 효율적이고 즐거워집니다.</p>
+      <p>당신이 어떤 목적이든, 어떤 인원 구성이든, 올바른 정보와 검증된 기준만 있다면 공항 라운지는 더 이상 선택의 부담이 아니라, 여행의 가치를 높이는 강력한 파트너가 될 것입니다.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Hongdae Club Guide. All rights reserved.</p>
+  </footer>
 </body>
 </html>
